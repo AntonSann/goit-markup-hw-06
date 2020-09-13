@@ -26,7 +26,7 @@
               <a href="./portfolio.html" class="link nav">Портфолио</a>
             </li>
             <li class="site-nav item">
-              <a href="" class="link nav">Контакты</a>
+              <a href="#contacts" class="link nav">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -52,15 +52,6 @@
     </header>
 
     <main>
-      <div class="backdrop is-hidden" data-modal>
-        <div class="modal" data-modal-close>
-          <button class="button-close" type="button" data-modal-close>
-            <svg class="icon-close">
-              <use href="./img/sprite.svg#close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
       <section class="hero">
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
         <button class="button" type="button" data-modal-open>
@@ -385,7 +376,7 @@
 
     <footer>
       <div class="container footer">
-        <div class="contacts-footer">
+        <div class="contacts-footer" id="contacts">
           <a href="./index.html" class="logo footerlogo"
             ><span class="logoblue">Web</span>Studio</a
           >
@@ -441,6 +432,50 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="button-close" type="button" data-modal-close>
+          <svg class="icon-close">
+            <use href="./img/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+        <form class="js-form">
+          <!-- Имя -->
+          <label for="name">Имя</label>
+          <input type="text" name="name" id="name" autocomplete="name" />
+          <!-- Телефон -->
+          <label for="tel">Телефон</label>
+          <input type="tel" name="tel" id="tel" autocomplete="tel" />
+          <!-- Почта -->
+          <label for="email">Почта</label>
+          <input type="email" name="email" id="email" autocomplete="email" />
+          <!-- Комментарий -->
+          <label for="name">Комментарий</label>
+          <textarea name="comment" id="comment" rows="5"></textarea>
+
+          <!-- Соглашение -->
+          <input type="checkbox" name="policy" value="accept" id="policy" />
+          <label for="policy"
+            >Соглашаюсь с рассылкой и принимаю
+            <a href="">Условия договора</a></label
+          >
+          <!-- Кнопка отправить -->
+          <button type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
+    <script>
+      (() => {
+        document.querySelector(".js-form").addEventListener("submit", (e) => {
+          e.preventDefault();
+
+          new FormData(e.currentTarget).forEach((value, name) =>
+            console.log(`${name}: ${value}`)
+          );
+        });
+      })();
+    </script>
   </body>
 </html>
