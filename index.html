@@ -442,26 +442,43 @@
         <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
         <form class="js-form">
           <!-- Имя -->
-          <label for="name">Имя</label>
-          <input type="text" name="name" id="name" autocomplete="name" />
+          <div class="form-field">
+            <label for="name">Имя</label>
+            <input type="text" name="name" id="name" autocomplete="name" />
+          </div>
           <!-- Телефон -->
-          <label for="tel">Телефон</label>
-          <input type="tel" name="tel" id="tel" autocomplete="tel" />
+          <div class="form-field">
+            <label for="tel">Телефон</label>
+            <input type="tel" name="tel" id="tel" autocomplete="tel" />
+          </div>
           <!-- Почта -->
-          <label for="email">Почта</label>
-          <input type="email" name="email" id="email" autocomplete="email" />
+          <div class="form-field">
+            <label for="email">Почта</label>
+            <input type="email" name="email" id="email" autocomplete="email" />
+          </div>
           <!-- Комментарий -->
-          <label for="name">Комментарий</label>
-          <textarea name="comment" id="comment" rows="5"></textarea>
+          <div class="form-field comment">
+            <label for="name">Комментарий</label>
+            <textarea
+              name="comment"
+              id="comment"
+              rows="5"
+              placeholder="Введите текст"
+            ></textarea>
+          </div>
 
           <!-- Соглашение -->
-          <input type="checkbox" name="policy" value="accept" id="policy" />
-          <label for="policy"
-            >Соглашаюсь с рассылкой и принимаю
-            <a href="">Условия договора</a></label
-          >
+
+          <div class="foem">
+            <input type="checkbox" name="policy" value="accept" id="policy" />
+            <label for="policy"
+              >Соглашаюсь с рассылкой и принимаю
+              <a href="">Условия договора</a></label
+            >
+          </div>
+
           <!-- Кнопка отправить -->
-          <button type="submit">Отправить</button>
+          <button type="submit" class="button">Отправить</button>
         </form>
       </div>
     </div>
