@@ -821,6 +821,22 @@ footer .social-icon-svg {
   margin-bottom: 20px;
 }
 
+.form-field label {
+  font-size: 12px;
+  line-height: 1.17;
+
+  letter-spacing: 0.01em;
+}
+
+.foem label {
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.foem a {
+  color: var(--accent-color);
+}
+
 .modal .button {
   display: block;
   margin-left: auto;
