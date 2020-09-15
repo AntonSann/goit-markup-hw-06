@@ -595,6 +595,7 @@ img {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  position: absolute;
 }
 
 .icon-check {
