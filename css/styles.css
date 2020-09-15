@@ -613,6 +613,7 @@ img {
   background-image: url("../img/check.svg");
   border-color: var(--accent-color);
   background-color: var(--accent-color);
+  background-origin: border-box;
   background-repeat: no-repeat;
   background-size: contain;
 }
