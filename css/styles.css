@@ -887,13 +887,20 @@ footer .social-icon-svg {
   left: 12px;
   width: 18px;
   height: 18px;
-  fill: rgba(117, 117, 117, 0.5);
 }
 
-.form-input:focus ~ .icon-form-field,
+.form-input:focus {
+  outline-color: var(--accent-color);
+}
+
+.form-input:focus ~ .icon-form-field {
+  width: 24px;
+  height: 24px;
+  fill: var(--accent-color);
+}
+
 .form-field textarea:focus {
   outline-color: var(--accent-color);
-  fill: var(--accent-color);
 }
 
 .foem {
