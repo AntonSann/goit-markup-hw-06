@@ -749,9 +749,16 @@ footer {
   margin-bottom: 9px;
 }
 
+.footer-contact-list {
+  margin-bottom: 9px;
+}
+
+.footer-contact-list:last-child {
+  margin-bottom: 0;
+}
+
 .footer-link {
   display: inline-block;
-  margin-bottom: 9px;
   color: var(--footer-link-color);
 
   font-weight: 400;
@@ -765,6 +772,7 @@ footer {
 
 .container.footer {
   display: flex;
+  align-items: baseline;
 }
 
 .contacts-footer {
@@ -772,7 +780,6 @@ footer {
 }
 
 .join-footer {
-  margin-top: 12px;
   margin-right: 93px;
 }
 
@@ -814,10 +821,6 @@ footer .social-icon-svg {
   width: 50px;
   height: 50px;
   margin: 0.5em;
-}
-
-.subscribe-footer {
-  margin-top: 12px;
 }
 
 .subscribe-form {
